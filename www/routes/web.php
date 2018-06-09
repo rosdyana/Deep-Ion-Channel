@@ -22,3 +22,4 @@ Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@
 
 # submission
 Route::get('submission', 'SubmissionController@submissionView');
+Route::post('submission', ['as'=>'submission.store','uses'=>'SubmissionController@submissionPost']);

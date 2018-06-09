@@ -37,35 +37,6 @@
     </header>
     <!--Header-area/-->
 
-    <!--Feature-area-->
-    <section class="gray-bg section-padding" id="submit-page">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                        <div class="page-title">
-                            <h2>Submission</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere
-                                harum fugiat!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-8">
-                        <form action="process.php" id="contact-form" method="post" class="contact-form">
-                            <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
-                            </div>
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Fasta sequence" required="required"></textarea>
-                            <button type="sibmit" class="button">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!--Feature-area/-->
-
-
 
     <section class="section-padding gray-bg" id="team-page">
         <div class="container">

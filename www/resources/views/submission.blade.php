@@ -26,7 +26,7 @@
    </div>
 @endif
 
-{!! Form::open(['route'=>'contactus.store']) !!}
+{!! Form::open(['route'=>'submission.store']) !!}
 
 <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 {!! Form::label('Name:') !!}
@@ -40,14 +40,22 @@
 <span class="text-danger">{{ $errors->first('email') }}</span>
 </div>
 
-<div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
+<div class="form-group {{ $errors->has('fasta') ? 'has-error' : '' }}">
 {!! Form::label('Fasta Sequence(s):') !!}
-{!! Form::textarea('message', old('message'), ['class'=>'form-control', 'placeholder'=>'Enter Fasta Sequence(s)']) !!}
-<span class="text-danger">{{ $errors->first('message') }}</span>
+{!! Form::textarea('fasta') !!}
+<span class="text-danger">{{ $errors->first('fasta') }}</span>
+</div>
+
+<div class="form-group {{ $errors->has('file') ? 'has-error' : '' }}">
+{!! Form::label('Fasta File:') !!}
+{!! Form::file('file')!!}
+    <p class="help-block">
+        File in FASTA format with maximum size 2,048KiB.
+    </p>
 </div>
 
 <div class="form-group">
-<button class="btn btn-success">Submit</button>
+<button type="submit" class="btn btn-success">Submit</button>
 </div>
            <p><b>Sample fasta Sequence(s)</b></p>
             <pre>

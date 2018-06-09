@@ -51,14 +51,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand logo">
+                <a href="{{ url('/') }}" class="navbar-brand logo">
                     <h2>Deep Ion Channel</h2>
                 </a>
             </div>
             <!--Logo/-->
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
+                    <li >
                         <a href="{{ url('/') }}#home-page">Home</a>
                     </li>
                     <li>
@@ -127,9 +127,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <p>&copy;Copyright 2018 All right resurved. This template is made with
+                        <p>&copy;Copyright 2018. Made with
                             <i class="ti-heart" aria-hidden="true"></i> by
-                            <a href="https://colorlib.com">Colorlib</a>
+                            <a href="https://rosdyanakusuma.com">Rosdyana</a>
                         </p>
                     </div>
                 </div>
