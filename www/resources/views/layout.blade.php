@@ -62,7 +62,7 @@
                         <a href="{{ url('/') }}#home-page">Home</a>
                     </li>
                     <li>
-                        <a href="{{ url('/') }}#submit-page">Submission</a>
+                        <a href="{{ url('/submission') }}">Submission</a>
                     </li>
                     <li>
                         <a href="{{ url('/') }}#team-page">Team</a>

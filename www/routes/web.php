@@ -16,5 +16,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+# contact us
 Route::get('contact-us', 'ContactUSController@contactUS');
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
+
+# submission
+Route::get('submission', 'SubmissionController@submissionView');
