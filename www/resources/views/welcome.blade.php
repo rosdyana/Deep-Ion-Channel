@@ -11,7 +11,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ex inventore vel error quibusdam animi
                         fugiat, doloribus dolores consectetur nulla deleniti sint blanditiis quod debitis quis vitae officiis
                         tempora numquam.</p>
-                    <a href="{{ url('/') }}#submit-page" class="button white">Submit Protein</a>
+                    <a href="{{ url('/submission') }}" class="button white">Submit Protein</a>
                 </div>
                 <div class="hidden-xs hidden-sm col-md-5 text-right">
                     <div class="screen-box screen-slider">

@@ -23,3 +23,7 @@ Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@
 # submission
 Route::get('submission', 'SubmissionController@submissionView');
 Route::post('submission', ['as'=>'submission.store','uses'=>'SubmissionController@submissionPost']);
+
+# result
+Route::get('/task/{id}', 'TaskController@result');
+Route::get('/finish{id}', 'TaskController@finish');

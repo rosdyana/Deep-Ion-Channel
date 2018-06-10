@@ -8,5 +8,5 @@ class Submission extends Model
 {
     public $table = 'submission';
  
-    public $fillable = ['name','email','fasta'];
+    public $fillable = ['name','email','fasta','file'];
 }

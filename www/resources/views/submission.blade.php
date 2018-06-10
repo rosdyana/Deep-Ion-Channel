@@ -45,7 +45,7 @@
 {!! Form::textarea('fasta') !!}
 <span class="text-danger">{{ $errors->first('fasta') }}</span>
 </div>
-
+<h4> Or </h4>
 <div class="form-group {{ $errors->has('file') ? 'has-error' : '' }}">
 {!! Form::label('Fasta File:') !!}
 {!! Form::file('file')!!}
