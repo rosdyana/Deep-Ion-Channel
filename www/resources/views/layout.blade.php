@@ -129,7 +129,7 @@
                     <div class="col-xs-12 text-center">
                         <p>&copy;Copyright 2018. Made with
                             <i class="ti-heart" aria-hidden="true"></i> by
-                            <a href="https://rosdyanakusuma.com">Rosdyana</a>
+                            <a href="https://rosdyanakusuma.com">Bioinformatic Lab 1607b YZU</a>
                         </p>
                     </div>
                 </div>

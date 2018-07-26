@@ -42,16 +42,16 @@
 
 <div class="form-group {{ $errors->has('fasta') ? 'has-error' : '' }}">
 {!! Form::label('Fasta Sequence(s):') !!}
-{!! Form::textarea('fasta') !!}
+{!! Form::textarea('fasta', old('fasta'), ['class'=>'form-control', 'placeholder'=>'See sample fasta sequence(s) below']) !!}
 <span class="text-danger">{{ $errors->first('fasta') }}</span>
 </div>
 <h4> Or </h4>
 <div class="form-group {{ $errors->has('file') ? 'has-error' : '' }}">
 {!! Form::label('Fasta File:') !!}
 {!! Form::file('file')!!}
-    <p class="help-block">
+    <h6>
         File in FASTA format with maximum size 2,048KiB.
-    </p>
+    </h6>
 </div>
 
 <div class="form-group">

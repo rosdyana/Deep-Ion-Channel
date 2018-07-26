@@ -2,11 +2,19 @@
 @section('content')
 
 <meta http-equiv="refresh" content="180">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
+<header class="header-area overlay small-header relative v-center" id="home-page">
+        <div class="absolute anlge-bg"></div>
+        
+        </div>
+    </header>
+    <!--Header-area/-->
+<div class="container">
+  <div class="row">
+    <br><br>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+      </div>
         <h1>Result - {{ $task->id }}</h1>
-        <h4>Submitter : {{ $task->email }}</h4>
+        <h4>Submitter : {{ $task->name }}</h4>
         <h4>Date : {{ $task-> created_at }}</h4>
         <div class="panel panel-info">
           <div class="panel-heading">
@@ -26,7 +34,7 @@
     <tr>
       <td>{{ $loop->index+1 }}</td>
       <td>
-        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{$loop->index+1}}">{{ $emt->name }}</button>
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#{{$loop->index+1}}">{{ str_limit($emt->name, $limit = 10) }}}</button>
       </td>
       <!-- Modal -->
       <div class="modal fade" id="{{$loop->index+1}}" role="dialog">
@@ -36,7 +44,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">{{ $emt->name }}</h4>
+              <h4 class="modal-title">{{ str_limit($emt->name, $limit = 10) }}</h4>
             </div>
             <div class="modal-body">
               <pre>{{ $emt->sequence }}</pre>
@@ -60,6 +68,4 @@
     </div>
   </div>
 
-
-</div>
 @endsection

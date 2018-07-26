@@ -13,7 +13,7 @@
                         tempora numquam.</p>
                     <a href="{{ url('/submission') }}" class="button white">Submit Protein</a>
                 </div>
-                <div class="hidden-xs hidden-sm col-md-5 text-right">
+                <!-- <div class="hidden-xs hidden-sm col-md-5 text-right">
                     <div class="screen-box screen-slider">
                         <div class="item">
                             <img src={{URL::asset('images/screen-1.jpg')}} alt="">
@@ -31,7 +31,7 @@
                             <img src={{URL::asset('images/screen-5.jpg')}} alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -117,7 +117,7 @@
                         <div class="team-photo">
                             <img src={{URL::asset('images/team-section-3.png')}} alt="">
                         </div>
-                        <h4>Khanh</h4>
+                        <h4>XXX</h4>
                         <h6>Student</h6>
                         <ul class="social-menu">
                             <li>
